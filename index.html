@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GIF Viewer</title>
+  <script>
+    function closeWindow() {
+      setTimeout(() => window.close(), 5000);
+    }
+  </script>
 </head>
 <body>
-  <img onload="setTimeout(() => window.close(), 5000)" src="./kitty.gif" style="display:block; margin:auto;">
+  <img onload="closeWindow()" src="./kitty.gif" style="display:block; margin:auto;">
 </body>
 </html>
